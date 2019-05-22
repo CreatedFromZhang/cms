@@ -1,0 +1,140 @@
+@import './assert/font/iconfont.css';
+
+.text-center {
+    text-align: center;
+}
+
+
+#root,
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .login {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        background-color: #C650C1;
+        align-items: center;
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            width: 70vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: row;
+
+            .img {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                img {
+                    overflow: hidden;
+                    width: 100%;
+
+                }
+            }
+
+            .form {
+                flex: 1;
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                .form-item {
+                    background-color: #E7E7E7;
+                    border-radius: 20px;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: left;
+                    padding: 0 20px;
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    input {
+                        margin-left: 20px;
+                        flex: 1;
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                    }
+
+                    input::placeholder {
+                        font-weight: 600;
+                    }
+
+                   
+                }
+                .btn-primary {
+                  background-color: #58B747;
+                  border: none;
+                  color: white;
+                  font-weight: 600;
+                  height: 45px;
+                  line-height: 45px;
+                  border-radius: 20px;
+                  margin-bottom: 30px;
+                  outline: none;
+              }
+
+              .tips {
+                text-align: center;
+                margin-bottom: 100px;
+              }
+              .create-account-tips {
+                text-align: center;
+              }
+            }
+
+        }
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .project-item {
+         margin: 20px;
+         background: #F1F5F9;
+         border-radius: 5px;
+         height: 100px;
+         width: 200px;
+         display: flex;
+         flex-direction: column;
+         justify-items: center;
+         align-items: center;
+         .img {
+           flex: 2;
+           text-align: center;
+           img {
+             width: 100px;
+             height: 50px;
+           }
+
+         }
+         .name {
+           flex: 1;
+           text-align: center;
+         }
+      }
+    }
+}
